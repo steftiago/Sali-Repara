@@ -7,6 +7,8 @@
 @import "layout";
 @import "mixin";
 @import "silent_class";
+@import "./pages/index";
+
 
 
 html {}
@@ -50,8 +52,8 @@ body {
         margin-top: 5px;
         color: $c3;
 
-        .italic {
-            font-style: italic;
+        .poppins {
+            font-style: poppins;
         }
     }
 }

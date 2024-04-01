@@ -1,0 +1,28 @@
+@import "instance";
+.sali{
+    &-repara{  
+        display: block;
+        .title{
+            font-weight: bold;
+        }
+        .section{
+            padding: 0 auto;
+            justify-content: center;
+            background-color: red;
+        }
+        .s1{
+            background-color: $c3;
+            text-align: center;
+            padding: 50px 100px;
+            display: inline-block;
+            .btn-sali{
+                margin: 50px  auto;
+                @include button((
+                    w: 153.52px,
+                    h: 51px
+                ));
+            }
+
+        }
+    }
+}

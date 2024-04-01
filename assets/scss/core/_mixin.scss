@@ -1,7 +1,13 @@
 //-----------------------------------
 //Mixin
 //-----------------------------------
-
+@mixin button($attr:()){
+    $w: mapv($attr,w,max-content);
+    $h: mapv($attr, h, 46px);
+    $p: mapv($attr, p, 8px 16px 8px 16px);
+    @include wh($w, $h);
+    padding: $p;
+}
 //-----------------------------------
 //End Mixin
 //-----------------------------------
