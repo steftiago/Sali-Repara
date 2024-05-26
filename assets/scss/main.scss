@@ -16,11 +16,12 @@ html {}
 .hide { display: none !important; }
 
 body {
-    @include scroll;
     @include font(100%);
     @include no-margins;
     @include no-border;
     @include bc($c1, $c2);
+
+    color: $c4;
 }
 
 .container_logo {
