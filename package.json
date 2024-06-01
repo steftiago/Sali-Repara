@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "gulp": "^5.0.0",
     "sqhtml": "^1.2.0"
   },
   "devDependencies": {
