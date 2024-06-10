@@ -1,13 +1,46 @@
 //-----------------------------------
 //Mixin
 //-----------------------------------
-@mixin button($attr:()){
+@mixin button($attr:()) {
     $w: mapv($attr,w,max-content);
     $h: mapv($attr, h, 46px);
     $p: mapv($attr, p, 8px 16px 8px 16px);
     @include wh($w, $h);
     padding: $p;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+@mixin cardDesing($attr:()) {
+    $b: mapv($attr,b,$c3);
+    $bo: mapv($attr,bo,4px solid $c6);
+    $bb: mapv($attr,bb,8px solid $c6);
+    
+    background-color: $b;
+    border: $bo;
+    border-bottom: $bb;
+}
+
+@mixin animate($attr:()) {
+    $an: mapv($attr,an,backInLeft);
+    $ad: mapv($attr,ad,1s);
+    animation-name: $an; 
+    animation-duration: $ad;
+}
+
+// MQS
+@mixin mq($mquery) {
+    $media-phone: "(max-width : #{$b9}px)"; // iPhone Retina
+    @if $mquery == mo {
+        @media #{$media-phone} {
+          @content;
+        }
+    }
+}
+
+
+
 //-----------------------------------
 //End Mixin
 //-----------------------------------

@@ -10,3 +10,75 @@
         content: "";
     }
 }
+
+.phone_svg {
+    &:before {
+        @include icon-svg(
+            phone,
+            20px, 20px,
+        );
+        top: 20px;
+
+        content: "";
+    }
+}
+
+.email_svg {
+    &:before {
+        @include icon-svg(
+            mail,
+            20px, 20px,
+        );
+        content: "";
+    }
+}
+
+.wpp_svg {
+    &:before {
+        @include icon-svg(
+            brand-whatsapp,
+            20px, 20px,
+        );
+        content: "";
+    }
+}
+
+.facebook_svg {
+    &:before {
+        @include icon-svg(
+            facebook,
+            20px, 20px,
+        );
+        content: "";
+    }
+}
+
+.instagram_svg {
+    &:before {
+        @include icon-svg(
+            instagram,
+            20px, 20px,
+        );
+        content: "";
+    }
+}
+
+.youtube_svg {
+    &:before {
+        @include icon-svg(
+            youtube,
+            20px, 20px,
+        );
+        content: "";
+    }
+}
+
+.whats_svg {
+    &:before {
+        @include icon-svg(
+            whatsapp,
+            40px, 40px,
+        );
+        content: "";
+    }
+}

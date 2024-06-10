@@ -1,11 +1,69 @@
 @import "instance";
 .sali {
+
+    &-head {
+        background-color: $c5;
+        color: $c1;
+        text-decoration: none;
+        @include mq(mo) {
+            font-size: 0.9rem;
+        }
+        
+
+        .sali-container_logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include mq(mo) {
+                justify-content: start;
+                align-items: center;
+            }
+
+            .sali-logo {
+                width: 100px;
+                height: 100px;
+                @include mq(mo) {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+    
+            .logo-text {
+                color: $c1;
+                font: bold;
+                font-size: large;
+                @include mq(mo) {
+                    display: none;
+                }
+            }
+
+            
+        }
+    }
+
     &-repara {  
         display: block;
         text-align: center;
 
+        .wpp-contact {
+            position: fixed;
+            top: 50%;
+            width: 100px;
+            right: 0;
+
+            .whats_svg {
+                @include ht;
+                @include position;
+                @include wh(40px, 40px);
+            }
+        }
+
         .title {
             font-weight: bold;
+            @include mq(mo) {
+                font-size: 1.4rem;
+            }
+
         }
 
         .text {
@@ -13,59 +71,269 @@
             word-wrap: break-word;
             color: $c5;
             margin: 8%;
+            @include mq(mo) {
+                font-size: 1.2rem;
+            }
         }
 
         .section {
             padding: 0 auto;
             justify-content: center;
+            border-radius: 20px;
+            padding: 50px;
+            opacity: 0;
+            transition: opacity 0.5s;
+            @include mq(mo) {
+                padding: 0;
+                opacity: 1;
+            }
+
+        }
+
+        .animate {
+            opacity: 1;
+            @include animate();
         }
 
         .s1 {
-            background-color: $c3;
-            padding: 50px 100px;
             display: flex;
-
-            .btn-sali {
-                @include button((
-                    w: 153.52px,
-                    h: 51px
-                ));
+            opacity: 1;
+            @include animate();
+            @include mq(mo) {
+                display: block;
             }
+            
 
             .d {
+                border-radius: 20px;
+                padding: 10px;
                 width: 50%;
-                margin: 2%;
+                margin: 3%;
+                @include cardDesing();
+                @include mq(mo) {
+                    width: 100%;
+                    margin: 0;
+                }
+
+            }
+
+            .d-b {
+                border-radius: 20px;
+                padding: 10px;
+                width: 50%;
+                margin: 3%;
+
             }
         }
 
         .s2 {
             padding: 20px;
+
             .servicios {
+                margin-top: 100px;
                 display: flex;
                 justify-content: center;
+                @include mq(mo) {
+                    display: block;
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .s3 {
+            display: block;
+            padding: 0;
+
+            &_information {
+                display: flex;
+                align-items: center;
+                @include mq(mo) {
+                    display: block;
+                    text-align: center;
+                    align-items: start;
+                }
+
+                .title {
+                    width: 50%;
+                    @include mq(mo) {
+                        width: 100%;
+                    }
+
+                }
+
+                .mobile {
+                    display: none;
+                    @include mq(mo) {
+                        display: block;
+                    }
+                }
+
+                .desktop {
+                    display: block;
+                    @include mq(mo) {
+                        display: none;
+                    }
+                }
+
+                .text {
+                    width: 50%;
+                    border-radius: 20px;
+                    padding: 30px;
+                    @include cardDesing();
+                    @include mq(mo) {
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+            }
+            
+        }
+
+        .s4 {
+
+            .slider {
+                width: 100%;
+                overflow: hidden;
+                max-width: 100%;
+
+                .slides {
+                    display: flex;
+                    transition: transform 0.5s ease-in-out;
+
+                    .slide {
+                        min-width: 100%;
+                        transition: opacity 1s ease-in-out;
+                        
+                        & .brand {
+                            width: 100%;
+
+                            .image {
+                                @include mq(mo) {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .s6 {
+
+            .container-info {
+                display: flex;
+                justify-content: center;
+                @include mq(mo) {
+                    display: block;
+                }
+
+                &_map {
+                    width: 50%;
+                    @include mq(mo) {
+                        width: 95%;
+                    }
+
+                    iframe {
+                        height: 450px;
+                        width: 600px;
+                        border: 0;
+                        @include mq(mo) {
+                            width: 90%;
+                            height: 50%;
+                        }
+                    }
+                }
+
+                &_data {
+                    display: block;
+                    width: 20vw;
+                    margin-left: 3vw;
+                    @include cardDesing((
+                        bo: 1px solid $c6,
+                        bb: 4px solid $c6,
+                    ));
+                    @include mq(mo) {
+                        width: 100%;
+                        margin-left: 0;
+                    }
+
+                    .data-section {
+                        display: contents;
+                    }
+
+                    .phone_svg {
+                        @include ht;
+                        @include position;
+                        @include wh(20px, 20px);
+                        display: flex;
+                        position: relative;
+                        left: 0;
+                        @include mq(mo) {
+                            left: 50px;
+                        }
+                    }
+
+                    .wpp_svg {
+                        @include ht;
+                        @include position;
+                        @include wh(20px, 20px);
+                        display: flex;
+                        position: relative;
+                        top: 21px;
+                        left: 0;
+                        @include mq(mo) {
+                            left: 50px;
+                        }
+                    }
+
+                    .email_svg {
+                        @include ht;
+                        @include position;
+                        @include wh(20px, 20px);
+                        display: flex;
+                        position: relative;
+                        left: -21px;
+                        top: 22px;
+                        @include mq(mo) {
+                            left: 50px;
+                        }
+                    }
+                }
             }
         }
         /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
         .flip-card {
             background-color: transparent;
-            width: 400px;
+            width: 100%;
+            max-width: 400px;
             height: 300px;
             perspective: 1000px; /* Remove this if you don't want the 3D effect */
+            display: flex;
+            align-items: center;
+            padding: 10px; /* add some padding for spacing*/
+
+            h1 {
+                font-size: 1.5rem;
+            } 
+            
             /* This container is needed to position the front and back side */
             .flip-card-inner {
                 position: relative;
                 width: 100%;
                 height: 100%;
+                padding-bottom: 75%;
                 text-align: center;
                 transition: transform 0.8s;
                 transform-style: preserve-3d;
             }
         
-        /* Do an horizontal flip when you move the mouse over the flip box container */
-            &:hover .flip-card-inner {
-                transform: rotateY(180deg);
-            }
-        
+            /* Do an horizontal flip when you move the mouse over the flip box container */
+            &:hover {
+                .flip-card-inner {
+                    transform: rotateY(180deg);
+                }
+            } 
+
             /* Position the front and back side */
             .flip-card-front, .flip-card-back {
                 position: absolute;
@@ -77,11 +345,115 @@
         
             /* Style the back side */
             .flip-card-back {
-                background-color: $c3;
                 color: $c4;
                 transform: rotateY(180deg);
-                padding: 15%;
+                padding: 10%;
+                box-sizing: border-box;
+                border-radius: 20px;
+                @include cardDesing();
+            }
+        }
+        
+        .flipped {
+            .flip-card-inner {
+               transform: rotateY(180deg) !important;
+           }
+        }
+
+        .modal {
+            display: none; /* Ocultar el modal por defecto */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4); /* Fondo negro con opacidad */
+            &-content {
+                background-color: #fefefe;
+                margin: 15% auto; /* 15% desde la parte superior y centrado horizontalmente */
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%; /* Puede ajustarse según sea necesario */
+
+                &-body {
+                    text-align: left;
+
+                    .text {
+                        margin: 0;
+                    }
+                }
+            }
+            
+            .close {
+                text-align: right;
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+    
+                &:hover,
+                &:focus {
+                    color: black;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+    }
+
+    &-foot {
+        display: flex;
+        justify-content: space-around;
+        background-color: $c5;
+        color: $c3;
+        @include mq(mo) {
+            font-size: 1rem;
+        }
+
+        .company {
+            display: block;
+            padding: 8px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social {
+            margin: 20px;
+
+            .icon {
+                display: flex;
+                justify-content: space-between;
+    
+                .facebook_svg {
+                    @include ht;
+                    @include position;
+                    @include wh(20px, 20px);
+                }
+    
+                .instagram_svg {
+                    @include ht;
+                    @include position;
+                    @include wh(20px, 20px);
+                }
+    
+                .youtube_svg {
+                    @include ht;
+                    @include position;
+                    @include wh(20px, 20px);
+                }
+    
+                .svg {
+                    width: 33,3%;
+                    margin: 20px;
+                }
             }
         }
     }
+}
+
+body.modal-open {
+    overflow: hidden;
 }
