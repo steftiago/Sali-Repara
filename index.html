@@ -2,47 +2,319 @@
 <html lang="es" class="page">
     <head>
         <meta charset="UTF-8">
-        <title>Sali-Repara</title>
+        <title>SALI REPARA</title>
         <base href="assets/">
         <meta http-equiv="Cache-Control" content="no-store" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="apple-mobile-web-app-capable" content="yes" color-scheme="light" />
 
         <!-- Favicons -->
-        <link rel="icon" type="image/png" href="img/favicons/favicon.png" />
-        <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicons/favicon.ico" />
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicons/favicon.ico" />
-        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png" />
+        <link rel="icon" type="image/png" href="img/favicons/logo.png" />
 
-        <link rel="apple-touch-icon-precomposed" size="57x57" href="img/favicons/apple-touch-icon-57x57.png" />
-        <link rel="apple-touch-icon-precomposed" size="60x60" href="img/favicons/apple-touch-icon-60x60.png" />
-        <link rel="apple-touch-icon-precomposed" size="72x72" href="img/favicons/apple-touch-icon-72x72.png" />
-        <link rel="apple-touch-icon-precomposed" size="76x76" href="img/favicons/apple-touch-icon-76x76.png" />
-        <link rel="apple-touch-icon-precomposed" size="114x114" href="img/favicons/apple-touch-icon-114x114.png" />
-        <link rel="apple-touch-icon-precomposed" size="120x120" href="img/favicons/apple-touch-icon-120x120.png" />
-        <link rel="apple-touch-icon-precomposed" size="144x144" href="img/favicons/apple-touch-icon-144x144.png" />
-        <link rel="apple-touch-icon-precomposed" size="152x152" href="img/favicons/apple-touch-icon-152x152.png" />
-
-
-        <meta name="msapplication-TileImage" content="img/favicons/tile.png" />
         <meta name="msapplication-TileColor" content="#FFFFFF" />
         <link rel="fluid-icon" href="img/favicons/fluidicon.png" title="sqHTML" />
         <!-- End favicons -->
 
         <!--  Styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/svg/svg.css" />
         <!--  End syles -->
 
         <!-- Scripts -->
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
         <script src="js/main.js" defer></script>
         <!-- End scripts -->
     </head>
-    <body>
-        <div class="container_logo">
-            <h1 class="logo_sqhtml">sqHTML</h1>
-            <h2 class="subtitle">Simply and quickly</h2>
-            <p class="text">Base to start projects in <i class="italic">HTML</i></p>
+    <body class="sali-repara">
+        <nav class="navbar bg-body-tertiary sali-head">
+            <div class="container-fluid">
+                    <a class="sali-container_logo">
+                        <picture class="d-inline-block align-text-top">
+                            <source></source>
+                            <img src="./img/favicons/logo.png" alt="" class="sali-logo">
+                        </picture>
+                        <span class="logo-text">
+                            SALI REPARA
+                        </span>
+                    </a>
+                    <a id="openModal">Nuestra empresa</a>
+            </div>
+        </nav>
+        <main class="sali-body">
+            <!--Secetion 1-->
+            <section id="s1" class="section s1">
+                <div class="d">
+                    <h1 class="title">Servicios eficientes de reparación de electrodomesticos</h1>
+                    <p class="text">Bienvenido a Sali-Repara, su principal proveedor de servicios de reparación del hogar. Nos comprometemos a ofrecer un servicio técnico rápido, fiable y eficaz para todos sus electrodomésticos. Ya se trate de un frigorífico, una cocina o una lavadora, nuestro equipo de expertos se encarga de que sus electrodomésticos funcionen en un abrir y cerrar de ojos. También ofrecemos servicios de instalación y vendemos piezas de electrodomésticos para hacerle la vida más fácil. Póngase en contacto hoy mismo y disfrute de unos servicios de reparación doméstica sin complicaciones.</p>
+                    <div>
+                        <a href="https://www.facebook.com/salirepara/?locale=es_LA" class="btn btn-primary btn-sali">Ver mas</a>
+                    </div>   
+                </div>
+                <div class="d-b animate__backInRight">
+                    <div class="fb-video" data-href="https://www.facebook.com/reel/1112251083384964" data-width="300px" data-height="500px" data-allowfullscreen="false"></div>     
+                </div>
+            </section>
+            <!--Secetion 2-->
+            <section id="s2" class="section s2">
+                <h2 class="title">Servicios que ofrecemos</h2>
+                <div class="servicios">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="./img/oso.webp" alt="Avatar" style="width:200px;height:200px;">
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>NEVERAS/<br>NEVECONES</h1>
+                            <p>Mantenimiento</p>
+                            <p>Reparaciones</p>
+                            <p>Instalación</p>
+                          </div>
+                        </div>
+                    </div> 
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="./img/perrito.webp" alt="Avatar" style="width:200px;height:200px;">
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>LAVADORAS</h1>
+                            <p>Reparación</p>
+                            <p>Mantenimiento</p>
+                            <p>Instalación</p>
+                          </div>
+                        </div>
+                    </div> 
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="./img/fenix.webp" alt="Avatar" style="width:200px;height:200px;">
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>ESTUFAS</h1>
+                            <p>Reparación</p>
+                            <p>Mantenimiento</p>
+                            <p>Instalación</p>
+                          </div>
+                        </div>
+                    </div> 
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="./img/Pato.webp" alt="Avatar" style="width:200px;height:200px;">
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>CALENTADORES</h1>
+                            <p>Reparación</p>
+                            <p>Mantenimiento</p>
+                            <p>Instalación</p>
+                          </div>
+                        </div>
+                    </div> 
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="./img/Pajaro.webp" alt="Avatar" style="width:200px;height:200px;">
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>SECADORAS</h1>
+                            <p>Reparación</p>
+                            <p>Mantenimiento</p>
+                            <p>Instalación</p>
+                          </div>
+                        </div>
+                    </div> 
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="./img/Canguro.webp" alt="Avatar" style="width:200px;height:200px;">
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>HORNOS</h1>
+                            <p>Reparación</p>
+                            <p>Mantenimiento</p>
+                          </div>
+                        </div>
+                    </div> 
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="./img/Delfin.webp" alt="Avatar" style="width:200px;height:200px;">
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>LAVAVAJILLAS</h1>
+                            <p>Reparación</p>
+                            <p>Mantenimiento</p>
+                            <p>Instalación (con entrada de agua caliente)</p>
+                          </div>
+                        </div>
+                    </div> 
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="./img/Gato.webp" alt="Avatar" style="width:200px;height:200px;">
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>GAS NATURAL</h1>
+                            <p>Reparación</p>
+                            <p>Mantenimiento</p>
+                            <p>Instalación</p>
+                          </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+            <section id="s3" class="section s3">
+                <div class="s3_information">
+                    <h1 class="title">¿Por qué elegirnos?</h1>
+                    <p class="text">
+                        Atendemos las necesidades de nuestros clientes con un servicio de calidad, llenando las expectativas de nuestros clientes con el servicio realizado.
+                    </p>
+                </div>
+                <div class="s3_information">
+                    <h1 class="title mobile">¿Para que Hacer el mantenimiento a mi electrodoméstico?</h1>
+                    <p class="text">Además de ser una de las recomendaciones principales de los fabricantes de los electrodomésticos; es la forma de aumentar la durabilidad de estos; unas de las ventajas de hacer un mantenimiento periódico a tu aparato son las siguientes:
+                        <br>
+                        - Detectar a tiempo piezas o mecanismos gastados que puedan causar algún daño irreversible.
+                        <br>
+                        - Evitar la corrosión o desgaste de las piezas o mecanismos.
+                        <br>
+                        - Lubricación de mecanismos que están expuestos a una constante fricción.
+                        <br>
+                        - Aumentar la vida útil de tu Electrodoméstico.</p>
+                    <h1 class="title desktop">¿Para que Hacer el mantenimiento a mi electrodoméstico?</h1>
+                </div>
+            </section>
+            <!--Secetion 3-->
+            <section id="s4" class="section s4">
+                <div>
+                    <h2 class="title">Marcas con las que trabajamos</h2>
+                </div>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide active">
+                            <picture class="brand">
+                                <source></source>
+                                <img src="./img/marcas/samsung.webp" alt="samsung" style="height: 219px;">
+                            </picture>
+                        </div>
+                        <div class="slide">
+                            <picture class="brand">
+                                <source></source>
+                                <img src="./img/marcas/challenger.webp" alt="challenger">
+                            </picture>
+                        </div>
+                        <div class="slide">
+                            <picture class="brand">
+                                <source></source>
+                                <img src="./img/marcas/hacep.webp" alt="hacep">
+                            </picture>
+                        </div>
+                        <div class="slide">
+                            <picture class="brand">
+                                <source></source>
+                                <img class="image" src="./img/marcas/bosch.webp" alt="bosch" style="height: 219px;">
+                            </picture>
+                        </div>
+                        <div class="slide">
+                            <picture class="brand">
+                                <source></source>
+                                <img src="./img/marcas/frigidaire.webp" alt="frigidaire">
+                            </picture>
+                        </div>
+                        <div class="slide">
+                            <picture class="brand">
+                                <source></source>
+                                <img src="./img/marcas/kitchenaid.webp" alt="kitchenaid" style="height: 219px;">
+                            </picture>
+                        </div>
+                        <div class="slide">
+                            <picture class="brand">
+                                <source></source>
+                                <img class="image" src="./img/marcas/mabe.webp" alt="mabe">
+                            </picture>
+                        </div>
+                        <div class="slide">
+                            <picture class="brand">
+                                <source></source>
+                                <img src="./img/marcas/whirpool.webp" alt="whirpool" style="height: 219px;">
+                            </picture>
+                        </div>
+                        <div class="slide">
+                            <picture class="brand">
+                                <source></source>
+                                <img src="./img/marcas/lg.webp" alt="lg">
+                            </picture>
+                        </div>
+                        <div class="slide">
+                            <picture class="brand">
+                                <source></source>
+                                <img src="./img/marcas/electrolux.webp" alt="electrolux">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Secetion 5-->
+            <section class="section s6">
+                <div class="container-info">
+                    <div class="container-info_map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.3323093865424!2d-74.06133348849876!3d4.712216441535881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8536b0c99df7%3A0x4423db590fdfe25a!2sReparaci%C3%B3n%20Lavadoras%20y%20Neveras%20Sali%20Repara%2C%20servicio%20t%C3%A9cnico!5e0!3m2!1ses-419!2sco!4v1717438870341!5m2!1ses-419!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="container-info_data">
+                        <ul class="data-section">
+                            <li class="section">
+                                <span class="phone_svg"></span>
+                                <p class="section-information">601 522 0503</p>
+                            </li>
+                            <li class="section">
+                                <span class="wpp_svg"></span>
+                                <a href="https://wa.me/3204951992?text=Hola%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios">320 4951992</a>
+                            </li>
+                            <li class="section">
+                                <span class="email_svg"></span>
+                                <p>servisenter@hotmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <footer class="sali-foot">
+            <div class="company">
+                <h4>SALI REPARA</h4>
+                <br>
+                <p>Calle 127D # 51A-18</p>
+                <br>
+                <p>Bogota D.C. - Prado Veraniego</p>
+            </div>
+            <div class="social">
+                <h4>También nos puedes encontrar en:</h4>
+                <div class="icon">
+                    <a href="https://www.facebook.com/salirepara/?locale=es_LA" class="facebook_svg svg"></a>
+                    <a href="https://www.youtube.com/channel/UCjG6VIzP4CWi1msUGtRbo-Q?view_as=subscriber" class="youtube_svg svg"></a>
+                    <a href="https://www.instagram.com/sali_repara22/" class="instagram_svg svg"></a>
+                </div>
+            </div>
+        </footer>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <hr>
+                <div class="modal-content-body">
+                    <h3 class="title">Misión:</h3>
+                    <p class="text">Ofrecer un servicio eficaz y de calidad, atendiendo los requerimientos en la brevedad posible, con compromiso y responsabilidad.</p>
+                    <h3 class="title">Visión:</h3>
+                    <p class="text">Ser reconocida a nivel local y nacional como empresa líder en la prestación de servicios para electrodomésticos en el área del hogar e industrial, cumpliendo las expectativas y necesidades del mercado.</p>
+                </div>
+            </div>
         </div>
+        <a href="https://wa.me/3204951992?text=Hola%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios" class="wpp-contact">
+            <span class="whats_svg"></span>
+        </a>
     </body>
 </html>
